@@ -471,12 +471,10 @@
 				<div class="elementor-element elementor-element-preoferta-content e-con-full e-flex e-con e-child" data-id="preoferta-content" data-element_type="container" data-e-type="container">
 				<div class="elementor-element elementor-element-preoferta-texto elementor-widget elementor-widget-text-editor" data-id="preoferta-texto" data-element_type="widget" data-e-type="widget" data-widget_type="text-editor.default">
 									<div class="preoffer-card preoffer-animated">
-										<p class="preoffer-intro"><strong>Quem sou eu</strong><br><span class="preoffer-professional-name">Dani Farias | Personal Trainer</span></p>
-										<p class="preoffer-bio">Sou profissional de Educa&ccedil;&atilde;o F&iacute;sica, Personal Trainer e atleta Wellness, com mais de 10 anos de experi&ecirc;ncia. Meu trabalho &eacute; baseado em estrat&eacute;gia, individualiza&ccedil;&atilde;o e acompanhamento, sempre respeitando a realidade e a evolu&ccedil;&atilde;o de cada aluno.</p>
-										<div class="preoffer-items">
-											<div class="preoffer-item"><strong>Fisiologia do Exerc&iacute;cio</strong> e aplica&ccedil;&atilde;o eficiente dos princ&iacute;pios do treinamento</div>
-											<div class="preoffer-item"><strong>Hipertrofia e Composi&ccedil;&atilde;o Corporal</strong> para ganho de massa e defini&ccedil;&atilde;o</div>
-											<div class="preoffer-item"><strong>Emagrecimento</strong> com treinamento voltado &agrave; redu&ccedil;&atilde;o de gordura e condicionamento</div>
+										<div class="preoffer-copy">
+										<p class="preoffer-intro"><strong>Quem sou eu</strong><br><span class="preoffer-professional-name">Dani Farias | Personal Trainer, Graduanda em Nutri&ccedil;&atilde;o e Atleta Wellness</span></p>
+										<h3 class="preoffer-about-title">Sobre Mim</h3>
+										<p class="preoffer-bio">Unindo ci&ecirc;ncia, sensibilidade e viv&ecirc;ncia pr&aacute;tica, dedico minha carreira a transformar vidas por meio do movimento e da sa&uacute;de integral. Sou bacharel em Educa&ccedil;&atilde;o F&iacute;sica, especialista em Grupos Especiais, Preven&ccedil;&atilde;o e Reabilita&ccedil;&atilde;o de Les&otilde;es, Fisiologia do Exerc&iacute;cio e Nutri&ccedil;&atilde;o. Atualmente, amplio ainda mais minha atua&ccedil;&atilde;o com a gradua&ccedil;&atilde;o em Nutri&ccedil;&atilde;o. Como atleta da categoria Wellness, vivo na pele a disciplina, o alto rendimento e a supera&ccedil;&atilde;o, provando que &eacute; poss&iacute;vel equilibrar alta performance, rotina familiar e sa&uacute;de.</p>
 										</div>
 										<div class="preoffer-gallery" aria-label="Galeria de fotos de Dani Farias">
 											<img class="preoffer-gallery__slide" src="assets/images/dani-sobre-01.jpeg" loading="eager" decoding="async" fetchpriority="high" alt="Dani Farias com troféu em competição de fisiculturismo">
@@ -485,12 +483,20 @@
 											<img class="preoffer-gallery__slide" src="assets/images/dani-sobre-04.png" loading="eager" decoding="async" alt="Dani Farias em apresentação de fisiculturismo">
 											<img class="preoffer-gallery__slide" src="assets/images/dani-sobre-05.jpeg" loading="eager" decoding="async" alt="Dani Farias celebrando conquista com troféu">
 										</div>
-										<p class="preoffer-outro">Meu prop&oacute;sito &eacute; ajudar voc&ecirc; a construir resultados de forma <strong>consciente, consistente e individualizada</strong>.</p>
 </div>								</div>
 				</div>
 					</div>
 				</div>
 <!-- SECTION: S72 -->
+<script>
+(function(){
+  var quemSouEu = document.querySelector('[data-id="preoferta"]');
+  var beneficios = document.getElementById('pna-benefits-premium');
+  if (quemSouEu && beneficios && beneficios.parentNode) {
+    beneficios.parentNode.insertBefore(quemSouEu, beneficios);
+  }
+})();
+</script>
 <div class="elementor-element elementor-element-4229964 e-flex e-con-boxed e-con e-parent" data-id="4229964" data-element_type="container" data-e-type="container" id="valor">
 					<div class="e-con-inner">
 				<div class="elementor-element elementor-element-1109b8d e-con-full e-flex e-con e-child" data-id="1109b8d" data-element_type="container" data-e-type="container">
@@ -1379,7 +1385,7 @@ line-height:1.06 !important;
 }
 [data-id="12e9345"] .elementor-heading-title{
   color:#9b5cff !important;
-  font-size:clamp(66px, 6.2vw, 104px) !important;
+  font-size:clamp(40px, 5vw, 64px) !important;
   line-height:.95 !important;
   font-weight:800 !important;
   text-align:center !important;
@@ -4209,6 +4215,15 @@ html::-webkit-scrollbar-thumb{
   font-weight:600 !important;
   line-height:30px !important;
 }
+.elementor-42 [data-id="preoferta-texto"] .preoffer-about-title{
+  margin:0 0 14px !important;
+  font-family:"Clash Display","Roboto Slab",sans-serif !important;
+  font-size:30px !important;
+  font-weight:800 !important;
+  line-height:36px !important;
+  color:#60E314 !important;
+  text-align:center !important;
+}
 /* Botão da terceira seção: ícone e texto lado a lado. */
 .elementor-42 [data-id="c9a7f12"] .elementor-button-content-wrapper{
   display:inline-flex !important;
@@ -4236,6 +4251,11 @@ html::-webkit-scrollbar-thumb{
   .elementor-42 [data-id="preoferta-texto"] .preoffer-professional-name{
     font-size:18px !important;
     line-height:24px !important;
+  }
+  .elementor-42 [data-id="preoferta-texto"] .preoffer-about-title{
+    margin-bottom:10px !important;
+    font-size:24px !important;
+    line-height:29px !important;
   }
   .elementor-42 [data-id="preoferta-texto"] .preoffer-bio{
     margin-bottom:24px !important;
@@ -4284,9 +4304,9 @@ html::-webkit-scrollbar-thumb{
     display:block !important;
     width:100% !important;
     max-width:100% !important;
-    font-size:clamp(32px,10vw,42px) !important;
+    font-size:clamp(20px,9vw,68px) !important;
     line-height:1.05 !important;
-    letter-spacing:-.5px !important;
+    letter-spacing:-.04em !important;
     white-space:nowrap !important;
     text-align:center !important;
     overflow:visible !important;
@@ -4371,6 +4391,46 @@ html::-webkit-scrollbar-thumb{
   }
   .elementor-42 [data-id="preoferta-texto"] .preoffer-gallery--ready .preoffer-gallery__slide:first-child{
     opacity:1;
+  }
+}
+</style>
+<style id="preoffer-responsive-columns-style">
+@media (min-width:768px){
+  .elementor-42 [data-id="preoferta-texto"] .preoffer-card{
+    display:grid !important;
+    grid-template-columns:minmax(0,1.08fr) minmax(340px,.92fr) !important;
+    column-gap:52px !important;
+    align-items:center !important;
+    max-width:1140px !important;
+  }
+  .elementor-42 [data-id="preoferta-texto"] .preoffer-copy{
+    grid-column:1 !important;
+    min-width:0 !important;
+  }
+  .elementor-42 [data-id="preoferta-texto"] .preoffer-intro{
+    margin-bottom:22px !important;
+    text-align:left !important;
+  }
+  .elementor-42 [data-id="preoferta-texto"] .preoffer-about-title{
+    text-align:left !important;
+  }
+  .elementor-42 [data-id="preoferta-texto"] .preoffer-bio{
+    margin:0 !important;
+    text-align:left !important;
+  }
+  .elementor-42 [data-id="preoferta-texto"] .preoffer-gallery{
+    grid-column:2 !important;
+    grid-row:1 !important;
+    align-self:center !important;
+    margin:0 !important;
+    max-width:460px !important;
+  }
+}
+@media (max-width:767px){
+  .elementor-42 [data-id="preoferta-texto"] .preoffer-intro,
+  .elementor-42 [data-id="preoferta-texto"] .preoffer-about-title,
+  .elementor-42 [data-id="preoferta-texto"] .preoffer-bio{
+    text-align:center !important;
   }
 }
 </style>
